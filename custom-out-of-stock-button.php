@@ -24,7 +24,7 @@ function custom_replace_add_to_cart_button() {
         $product_link = urlencode(get_permalink($product->get_id()));
 
         // WhatsApp linki oluştur
-        $whatsapp_number = "905469530143"; // Buraya WhatsApp numaranızı girin (90 Türkiye alan kodu için)
+        $whatsapp_number = "905000000000"; // Buraya WhatsApp numaranızı girin (90 Türkiye alan kodu için)
         $whatsapp_message = "Merhaba, ürünle ilgili stok durumunu öğrenmek istiyorum: $product_name ($product_link)";
 $whatsapp_url = "https://wa.me/$whatsapp_number?text=$whatsapp_message";
 
@@ -43,7 +43,7 @@ function custom_elementor_out_of_stock_button($content, $widget) {
         if (!$product->is_in_stock()) {
             $product_name = urlencode($product->get_name());
             $product_link = urlencode(get_permalink($product->get_id()));
-            $whatsapp_number = "905469530143"; // WhatsApp numaranızı buraya girin
+            $whatsapp_number = "905000000000"; // WhatsApp numaranızı buraya girin
             $whatsapp_message = "Merhaba, ürünle ilgili stok durumunu öğrenmek istiyorum: $product_name ($product_link)";
 $whatsapp_url = "https://wa.me/$whatsapp_number?text=$whatsapp_message";
 
